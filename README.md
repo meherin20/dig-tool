@@ -25,3 +25,14 @@ A fully responsive React-based digital tools storefront designed from Figma, fea
 - Pricing plans section
 - CTA section
 - Footer with social links
+## Run Locally
+```bash
+npm install
+npm run dev
+```
+
+## Build
+```bash
+npm run build
+npm run preview
+```
