@@ -36,3 +36,5 @@ npm run dev
 npm run build
 npm run preview
 ```
+
+my project just run here but after deploy i cant see
