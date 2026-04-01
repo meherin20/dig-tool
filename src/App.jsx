@@ -25,3 +25,24 @@ const iconMap = {
   package: packageIcon,
   social: socialIcon,
 };
+const tagColors = {
+  "best seller": "bg-amber-100 text-amber-700",
+  popular: "bg-violet-100 text-violet-700",
+  new: "bg-emerald-100 text-emerald-700",
+};
+
+function formatPeriod(period) {
+  if (period === "one-time") return "/One-Time";
+  if (period === "yearly") return "/Year";
+  return "/Mo";
+}
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState("products");
+  const [cart, setCart] = useState([]);
+
+  const totalPrice = useMemo(
+    () => cart.reduce((sum, item) => sum + item.price, 0),
+    [cart]
+  );
+  
